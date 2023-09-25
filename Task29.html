@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Task29.css">
+    <title>Task 29</title>
+</head>
+<body>
+    <main>
+        <p class="name">Password Generator</p>
+        <p class="password-result"></p>
+        <section class="types">
+            <div>
+                <p>Uppercase</p>
+                <input class="input1" type="checkbox">
+            </div>
+            <div>
+                <p>Lovercase</p>
+                <input class="input2" type="checkbox">
+            </div>
+            <div>
+                <p>Numbers</p>
+                <input class="input3" type="checkbox">
+            </div>
+            <div>
+                <p>Symbols</p>
+                <input class="input4" type="checkbox">
+            </div>
+        </section>
+
+        <section class="password-length">
+            <p>Password Length</p>
+            <div>
+                <button onclick="score--;changeScore()">-</button>
+                <p class="length"></p>
+                <button onclick="score++;changeScore()">+</buttonp>
+            </div>
+        </section>
+        <div class="buttons">
+            <button onclick="generatePassword()">Generate Password</button>
+            <button onclick="copyText()">Copy Password</button>
+        </div>
+    </main>
+    <script src="Task29.js"></script>
+</body>
+</html>
